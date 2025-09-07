@@ -9,7 +9,7 @@ function HomePage() {
                   <ul>
                       <li className="inline-block p-3 text-white font-bold"><Link to='/FoodCard'>FoodCard</Link></li>
                       <li className="inline-block p-3 text-white font-bold"><Link to='/GehgehForm'>GehgehForm</Link></li>
-                      
+                      <Link to='/'><li className="inline-block p-3 text-white font-bold">HomePage</li></Link>
                   </ul>
               </div>
          </div>
