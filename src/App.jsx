@@ -1,20 +1,19 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import FoodCard from './components/FoodCard'
-import GehgehForm from './components/GehgehForm'
-import HomePage from './components/HomePage'
+import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom'
+import NavBar from './components/NavBar'
+import Home from './components/Home'
+import About from './components/About'
+import Product from './components/Product'
 
 function App() {
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path='/*' element={<HomePage />} />
-          <Route path='/FoodCard' element={<FoodCard />} />
-          <Route path='/GehgehForm' element={<GehgehForm />} />
-        </Routes>
-      </Router>
+      <NavBar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/product' element={<Product />} />
+      </Routes>
     </>
   )
 }
